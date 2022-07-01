@@ -25,7 +25,7 @@ for i in range(26):
     pososto=0
     pososto=emfaniseis[i]/len(data_monogrammata_mona)*100
     pososto=int(pososto)+1
-    print("\nΤο ποσοστό εμφάνισης του",list[i],"είναι:",end="")
+    print("\nThe occurrence rate of the letter",list[i]," είναι: ",end="")
     for j in range(pososto):
         print("*",end="")
     print("%")
