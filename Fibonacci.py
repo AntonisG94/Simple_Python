@@ -13,13 +13,13 @@ def fibo(x):
 
 while True:
     try:
-        x=int(input("Πληκτρολογήστε τον όρο της ακολουθίας που θέλετε να ελέγξετε: "))
+        x=int(input("Type the term of the sequence you want to check:"))
         if x<=0:
-            print("Λανθασμένα δεδομένα.")
+            print("Incorrect data.")
         else:
             break
     except:
-        print("Λανθασμένα δεδομένα.")
+        print("Incorrect data.")
 
 p=fibo(x)
 flag=0
@@ -31,6 +31,6 @@ if p>3:
         else:
             flag=0
 if flag==0:
-    print("Ο αριθμός",p,"που ειναι ο",x,"όρος είναι πρώτος.")
+    print("Number ",p," that is the ",x," term on the sequence is prime.")
 else:
-    print("Ο αριθμός",p,"που ειναι ο",x,"όρος δεν είναι πρώτος.")
+    print("Number ",p," that is the ",x," term on the sequence isn't prime.")
